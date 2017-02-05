@@ -9,3 +9,5 @@ Here I am using python to create a **frequency dictionary** from mainly spoken w
 * OPUS books: http://opus.lingfil.uu.se/Books.php
 
 Thanks to everyone who contributed to this great open source linguistic project!!
+
+Improved code for stability.
