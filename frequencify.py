@@ -37,7 +37,6 @@ base_dir = "corpora/OPUS_es"
 subfolders = os.listdir(base_dir)
 dig_deeper = "xml/es"
 subfolders.remove('.DS_Store')
-subfolders
 
 
 # In[ ]:
@@ -53,7 +52,7 @@ for root, dirs, files in os.walk("corpora/OPUS_es"):
 # In[6]:
 
 # short list for testing
-test_list = file_list[:5]
+#test_list = file_list[:5]
 
 
 # ## Initialize all things
@@ -109,8 +108,8 @@ def fetch_frequency(tree, lemma_freq, what_lems, non_words):
 
 # In[9]:
 
-for zip_file in test_list:
-#for zip_file in file_list:
+#for zip_file in test_list:
+for zip_file in file_list:
     with gzip.open(zip_file, "rb") as xml_file:
         try:
             tree = ET.parse(xml_file)
